@@ -80,7 +80,7 @@ pipeline {
           }
          }
         }
-        stage(Upload Image) {
+        stage('Upload Image') {
          steps{
            script {
              docker.withRegistry('', registryCredential) {
